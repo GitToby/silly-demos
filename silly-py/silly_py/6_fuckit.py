@@ -2,12 +2,12 @@
 
 from typing import Dict
 
-# import fuckit as fuckit
+import fuckit as fuckit
 import uvicorn
 from fastapi import FastAPI
 
-import internal
-# fuckit(fuckit('internal'))
+# import internal
+fuckit(fuckit('internal'))
 
 app = FastAPI()
 

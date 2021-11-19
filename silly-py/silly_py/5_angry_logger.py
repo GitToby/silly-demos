@@ -3,7 +3,7 @@ from collections import Counter
 
 import angry_logger
 
-# angry_logger.go_to_town(potty_mouth=False)
+angry_logger.go_to_town(potty_mouth=False)
 
 import logging
 
@@ -33,7 +33,7 @@ if __name__ == '__main__':
     log.info("lets read my file shall we?")
 
     try:
-        with open('data/book2.txt') as f:
+        with open('data/book.txt') as f:
             log.debug('opening file')
             my_text = f.readlines()
         log.debug('starting analysis')
