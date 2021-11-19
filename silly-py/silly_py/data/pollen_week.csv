@@ -1,4 +1,4 @@
-day,hour of day,hours,work hour,coffees consumed,alcohol consumed,code written
+day,hour of day,hours,work hour,coffee consumed,alcohol consumed,code written
 Monday,1,1,FALSE,0,0,0
 ,2,2,FALSE,0,0,0
 ,3,3,FALSE,0,0,0

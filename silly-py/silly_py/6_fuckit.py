@@ -7,15 +7,19 @@ import uvicorn
 from fastapi import FastAPI
 
 import internal
-
 # fuckit(fuckit('internal'))
 
 app = FastAPI()
 
 
 @app.get("/hello")
-def hello(name: str = 'world'):
-    return f'hello {name}'
+def hello(name: str = 'world') -> str:
+    logging.info(f"Saying hello to {name}")
+    if name != 'teapot':
+        return f'hello {name}'
+    else:
+        logging.warning("Someone is trying to be a teapot!")
+        raise HTTPException(418, "Im the only teapot here!")
 
 
 @app.put("/book")
